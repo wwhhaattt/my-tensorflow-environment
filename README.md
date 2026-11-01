@@ -12,7 +12,7 @@ using for myself
 
 后记：啊呀呀呀呀呀呀呀！当时选择python3.6.9是因为据说兼容性最好，结果现在发现vscode的新版debugpy已经不支持了！所以只能手动降版本。  
  - `conda activate tf114`
- - `python -m pip install "debugpy==1.5.1" -i https://pypi.tuna.tsinghua.edu.cn/simple`
+ - `pip install "debugpy==1.5.1" -i https://pypi.tuna.tsinghua.edu.cn/simple`
  - 在launch.json加`"debugAdapterPath": "C:\\Users\\用户名\\.conda\\envs\\tf114\\Lib\\site-packages\\debugpy\\adapter"`
 代价：1.5.1 是 2022 年的版本，跟 VS Code 1.144 的 DAP 协议有些新特性对不上（个别边缘功能、比如某些数据断点可能不灵），基础断点/单步/变量查看没问题。
 也许最佳选择是选择python3.7重装环境，但我实在是累了，就这样凑合用吧😭
@@ -25,6 +25,6 @@ using for myself
  - `pip install tensorflow==1.14.0 -i https://pypi.tuna.tsinghua.edu.cn/simple`
  - 到这里其实已经把环境配好了。接下来的步骤是为了兼容vscode的调试。
  - `conda activate tf114`
- - `python -m pip install "debugpy==1.7.0" -i https://pypi.tuna.tsinghua.edu.cn/simple`
+ - `pip install "debugpy==1.7.0" -i https://pypi.tuna.tsinghua.edu.cn/simple`
  - 在launch.json加`"debugAdapterPath": "C:\\Users\\用户名\\.conda\\envs\\tf114\\Lib\\site-packages\\debugpy\\adapter"`  
 这下应该不会再折腾环境了，要好好学习书里的内容了
