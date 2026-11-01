@@ -1,4 +1,6 @@
 # my-tensorflow-environment
+注：以下命令大量用到清华的镜像源，适合中国国内使用。若不在大陆可尝试把命令末尾的`-i https://pypi.tuna.tsinghua.edu.cn/simple`删掉
+
 初次尝试
 =
 我从图书馆借了《深度学习程序设计实战》，在踩了许多坑后，我总结了一些安装书中学习环境的经验。我将直接给出配置命令。  
@@ -33,4 +35,4 @@
  - `conda activate tf114`
  - `pip install "debugpy==1.7.0" -i https://pypi.tuna.tsinghua.edu.cn/simple`
  - 在launch.json加`"debugAdapterPath": "C:\\Users\\用户名\\.conda\\envs\\tf114\\Lib\\site-packages\\debugpy\\adapter"`  
-这下应该不会再折腾环境了，要好好学习书里的内容了
+这下应该不会再折腾环境了，要好好学习书里的内容了。
