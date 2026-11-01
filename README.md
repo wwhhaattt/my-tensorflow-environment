@@ -9,3 +9,10 @@ using for myself
  - `pip install tensorflow==1.14.0 -i https://pypi.tuna.tsinghua.edu.cn/simple`
  - `pip install keras==2.2.4 -i https://pypi.tuna.tsinghua.edu.cn/simple`
 3.差不多完成了。如果用vscode，记得ctrl+shift+p，输入python:interpreter，选择正确的python解释器
+
+后记：啊呀呀呀呀呀呀呀！当时选择python3.6.9是因为据说兼容性最好，结果现在发现vscode的新版debugpy已经不支持了！所以只能手动降版本。  
+ - `conda activate tf114`
+ - `python -m pip install "debugpy==1.5.1" -i https://pypi.tuna.tsinghua.edu.cn/simple`
+ - 在launch.json加`"debugAdapterPath": "C:\\Users\\A\\.conda\\envs\\tf114\\Lib\\site-packages\\debugpy\\adapter"`
+代价：1.5.1 是 2022 年的版本，跟 VS Code 1.144 的 DAP 协议有些新特性对不上（个别边缘功能、比如某些数据断点可能不灵），基础断点/单步/变量查看没问题。
+也许最佳选择是选择python3.7重装环境，但我实在是累了，就这样凑合用吧😭
