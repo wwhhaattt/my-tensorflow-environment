@@ -7,7 +7,8 @@ using for myself
  - `conda activate tf114`
  - `pip install numpy==1.16.6 h5py==2.10.0 protobuf==3.12.0 -i https://pypi.tuna.tsinghua.edu.cn/simple`
  - `pip install tensorflow==1.14.0 -i https://pypi.tuna.tsinghua.edu.cn/simple`
- - `pip install keras==2.2.4 -i https://pypi.tuna.tsinghua.edu.cn/simple`  
+ - `pip install keras==2.2.4 -i https://pypi.tuna.tsinghua.edu.cn/simple`
+
 3.差不多完成了。如果用vscode，记得ctrl+shift+p，输入python:interpreter，选择正确的python解释器
 
 后记：啊呀呀呀呀呀呀呀！当时选择python3.6.9是因为据说兼容性最好，结果现在发现vscode的新版debugpy已经不支持了！所以只能手动降版本。  
